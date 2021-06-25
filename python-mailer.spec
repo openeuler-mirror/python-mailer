@@ -9,7 +9,7 @@ Source0:	https://files.pythonhosted.org/packages/30/e7/c3a932fc03ab95c96ff911d8e
 BuildArch:	noarch
 
 %description
-Here are some of the features:Single class to send plain text, HTML email, and attachments ，Auto detects attachment types ，Support for internationalized headers 
+A module to send email simply in Python
 
 %package -n python3-mailer
 Summary:	A module to send email simply in Python
@@ -23,7 +23,7 @@ Summary:	Development documents and examples for mailer
 Provides:	python3-mailer-doc
 
 %description help
-Here are some of the features:Single class to send plain text, HTML email, and attachments ，Auto detects attachment types ，Support for internationalized headers 
+A module to send email simply in Python
 
 %prep
 %autosetup -n mailer-0.8.1
