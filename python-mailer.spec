@@ -18,6 +18,9 @@ BuildRequires:	python3-devel
 BuildRequires:	python3-setuptools
 BuildRequires:	python3-pbr
 
+%description -n python3-mailer
+A module to send email simply in Python
+
 %package help
 Summary:	Development documents and examples for mailer
 Provides:	python3-mailer-doc
