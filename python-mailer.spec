@@ -1,11 +1,12 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-mailer
 Version:	0.8.1
-Release:	1
+Release:	2
 Summary:	A module to send email simply in Python
 License:	MIT
 URL:		https://bitbucket.org/ginstrom/mailer
 Source0:	https://files.pythonhosted.org/packages/30/e7/c3a932fc03ab95c96ff911d8ee3e89b937205596a5c1f00849401a2468e0/mailer-0.8.1.zip
+Patch0:		remove_2to3.patch
 BuildArch:	noarch
 
 %description
@@ -29,7 +30,7 @@ Provides:	python3-mailer-doc
 A module to send email simply in Python
 
 %prep
-%autosetup -n mailer-0.8.1
+%autosetup -n mailer-0.8.1 -p1
 
 %build
 %py3_build
@@ -69,5 +70,8 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Thu May 05 2022 YukariChiba <i@0x7f.cc>
+- Remove deprecated attribute: use_2to3
+
 * Thu Jun 17 2021 OpenStack_SIG <openstack@openeuler.org>
 - Package Spec generated
